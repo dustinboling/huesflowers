@@ -3,47 +3,47 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import photoAnimaginary from '@/images/logos/animaginary.svg'
+import photoCosmos from '@/images/logos/cosmos.svg'
+import photoHelioStream from '@/images/logos/helio-stream.svg'
+import photoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import photoPlanetaria from '@/images/logos/planetaria.svg'
 
 const plantStarts = [
   {
-    name: 'Planetaria',
+    name: 'Snapdragon',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    link: { href: '/snapdragon', label: 'Shop Snapdragons' },
+    photo: photoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Eucalyptus',
     description:
       'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    link: { href: '#', label: 'Shop ' },
+    photo: photoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Cinnimon Basil',
     description:
       'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    link: { href: '#', label: 'Shop ' },
+    photo: photoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Yarrow',
     description:
       'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+    link: { href: '#', label: 'Shop ' },
+    photo: photoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Zinnia',
     description:
       'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+    link: { href: '#', label: 'Shop ' },
+    photo: photoOpenShuttle,
   },
 ]
 
@@ -67,19 +67,20 @@ export default function PlantStarts() {
   return (
     <SimpleLayout
       title="The Flower Nursery. Cut Flower Starts for Your Own Garden."
-      intro="Hues' flower nursery is the place to find the best varieties of cut flower starts ready to plant in your own garden at home."
+      intro="Hues' cut flower nursery is the place to find the best varieties of cut flower starts ready to plant in your own garden at home."
     >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {plantStarts.map((plantStart) => (
+          >
+              <li>Coming soon...</li>
+        {/* {plantStarts.map((plantStart) => (
           <Card as="li" key={plantStart.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-lime-800/5 ring-lime-900/5 dark:border dark:border-lime-700/50 dark:bg-lime-800 dark:ring-0">
+            <div className="relative z-10 flex h-36 w-36 items-center justify-center rounded bg-white shadow-md ring-1 shadow-lime-800/5 ring-lime-900/5 dark:border dark:border-lime-700/50 dark:bg-lime-800 dark:ring-0">
               <Image
-                src={plantStart.logo}
+                src={plantStart.photo}
                 alt=""
-                className="h-8 w-8"
+                className="h-32 w-32"
                 unoptimized
               />
             </div>
@@ -92,7 +93,7 @@ export default function PlantStarts() {
               <span className="ml-2">{plantStart.link.label}</span>
             </p>
           </Card>
-        ))}
+        ))} */}
       </ul>
     </SimpleLayout>
   )

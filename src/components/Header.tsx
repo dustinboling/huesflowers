@@ -177,8 +177,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium whitespace-nowrap text-lime-800 shadow-lg ring-1 shadow-lime-800/5 ring-lime-900/5 backdrop-blur-sm dark:bg-lime-800/90 dark:text-lime-200 dark:ring-white/10">
         <NavItem href="/floral-park">Floral Park</NavItem>
-        {/* <NavItem href="/dahlias">Dusty's Dahlias</NavItem> */}
-        {/* <NavItem href="/nursery">Nursery</NavItem> */}
+        <NavItem href="/dahlias">Dusty's Dahlias</NavItem>
+        <NavItem href="/nursery">Nursery</NavItem>
         {/* <NavItem href="/articles">News</NavItem> */}
         <NavItem href="/about">About</NavItem>
       </ul>

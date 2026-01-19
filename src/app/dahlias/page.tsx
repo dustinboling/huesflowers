@@ -67,13 +67,14 @@ export default function Dahlias() {
   return (
     <SimpleLayout
       title="Dusty's Dahlias."
-      intro="lorem ipsum"
+      intro="Over 120 varieties in all forms available as tubers, with many varieties pre-potted and greenhouse started for earlier blooms."
     >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {dahlias.map((dahlia) => (
+          >
+              <li>Stay tuned... website under construction.</li>
+        {/* {dahlias.map((dahlia) => (
           <Card as="li" key={dahlia.name}>
             <div className="relative z-10 flex p-2 items-center justify-center rounded-xl bg-white shadow-md ring-1 shadow-lime-800/5 ring-lime-900/5 dark:border dark:border-lime-700/50 dark:bg-lime-800 dark:ring-0">
               <Image
@@ -92,7 +93,7 @@ export default function Dahlias() {
               <span className="ml-2">{dahlia.link.label}</span>
             </p>
           </Card>
-        ))}
+        ))} */}
       </ul>
     </SimpleLayout>
   )
