@@ -18,6 +18,14 @@
       "custom_domain": true,
     },
     {
+      "pattern": "hues.flowers",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.hues.flowers",
+      "custom_domain": true,
+    },
+    {
       "pattern": "hues.farm",
       "custom_domain": true,
     },
