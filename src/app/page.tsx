@@ -75,7 +75,6 @@ function Article({ article }: { article: ArticleWithSlug }) {
   )
 }
 
-
 function Newsletter() {
   return (
     <form
@@ -87,7 +86,8 @@ function Newsletter() {
         <span className="ml-3">Become a flower friend</span>
       </h2>
       <p className="mt-2 text-sm text-lime-600 dark:text-lime-400">
-        Get notified of special events, dahlia tuber sales, and other enchanting news.
+        Get notified of special events, dahlia tuber sales, and other enchanting
+        news.
       </p>
       <div className="mt-6 flex items-center">
         <span className="flex min-w-0 flex-auto p-px">
@@ -107,45 +107,55 @@ function Newsletter() {
   )
 }
 
-interface SpecialEvent { 
-    title: string
-    description : string
-    start: string | { label: string; dateTime: string }
-    end: string | { label: string; dateTime: string }
+interface SpecialEvent {
+  title: string
+  description: string
+  start: string | { label: string; dateTime: string }
+  end: string | { label: string; dateTime: string }
 }
 
 function SpecialEvent({ specialEvent }: { specialEvent: SpecialEvent }) {
-    let startLabel =
-        typeof specialEvent.start === 'string' ? specialEvent.start : specialEvent.start.label
-    let startDate =
-        typeof specialEvent.start === 'string' ? specialEvent.start : specialEvent.start.dateTime
-    
-    let endLabel = typeof specialEvent.end === 'string' ? specialEvent.end : specialEvent.end.label
-    let endDate = typeof specialEvent.end === 'string' ? specialEvent.end : specialEvent.end.dateTime
+  let startLabel =
+    typeof specialEvent.start === 'string'
+      ? specialEvent.start
+      : specialEvent.start.label
+  let startDate =
+    typeof specialEvent.start === 'string'
+      ? specialEvent.start
+      : specialEvent.start.dateTime
 
-    return (
-      <li className="flex gap-4">
-        <dl className="flex flex-auto flex-wrap gap-x-2">
-          <dt className="sr-only">Title</dt>
-          <dd className="w-full flex-none text-sm font-medium text-lime-900 dark:text-lime-100">
-            {specialEvent.title}
-          </dd>
-          <dt className="sr-only">Description</dt>
-          <dd className="text-xs text-lime-500 dark:text-lime-400">
-            {specialEvent.description}
-          </dd>
-          <dt className="sr-only">Date</dt>
-          <dd
-            className="ml-auto text-xs text-lime-400 dark:text-lime-500"
-            aria-label={`${startLabel} until ${endLabel}`}
-          >
-            <time dateTime={startDate}>{startLabel}</time>{' '}
-            <span aria-hidden="true">—</span>{' '}
-            <time dateTime={endDate}>{endLabel}</time>
-          </dd>
-        </dl>
-      </li>
-    )
+  let endLabel =
+    typeof specialEvent.end === 'string'
+      ? specialEvent.end
+      : specialEvent.end.label
+  let endDate =
+    typeof specialEvent.end === 'string'
+      ? specialEvent.end
+      : specialEvent.end.dateTime
+
+  return (
+    <li className="flex gap-4">
+      <dl className="flex flex-auto flex-wrap gap-x-2">
+        <dt className="sr-only">Title</dt>
+        <dd className="w-full flex-none text-sm font-medium text-lime-900 dark:text-lime-100">
+          {specialEvent.title}
+        </dd>
+        <dt className="sr-only">Description</dt>
+        <dd className="text-xs text-lime-500 dark:text-lime-400">
+          {specialEvent.description}
+        </dd>
+        <dt className="sr-only">Date</dt>
+        <dd
+          className="ml-auto text-xs text-lime-400 dark:text-lime-500"
+          aria-label={`${startLabel} until ${endLabel}`}
+        >
+          <time dateTime={startDate}>{startLabel}</time>{' '}
+          <span aria-hidden="true">—</span>{' '}
+          <time dateTime={endDate}>{endLabel}</time>
+        </dd>
+      </dl>
+    </li>
+  )
 }
 
 function SpecialEvents() {
@@ -245,13 +255,16 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+                  <div className="flex flex-col gap-16">
+                      <h2>FYI: Website is currently under construction.</h2>
+            {/*
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
+                       */}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <SpecialEvents />
           </div>
         </div>
