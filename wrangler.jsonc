@@ -17,5 +17,9 @@
       "pattern": "www.huesflowers.com",
       "custom_domain": true,
     },
+    {
+      "pattern": "www.hues.farm",
+      "custom_domain": true,
+    },
   ],
 }
