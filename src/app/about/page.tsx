@@ -4,10 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  InstagramIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { InstagramIcon, XIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/dusty.jpeg'
 
 function SocialLink({
@@ -67,26 +64,83 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-lime-800 sm:text-5xl dark:text-lime-100">
-            I’m Dusty. The founder and farmer of Hues.
+            I’m Dusty. The Farmer and Creator of Hues.
           </h1>
           <div className="mt-6 space-y-7 text-base text-lime-600 dark:text-lime-400">
             <p>
-              My passion for growing plants started in my teens when I dreamed of working at a local nursery, or as a landscape architect.
+              Hues didn't start as a business plan. It started as a feeling.
             </p>
+
             <p>
-              Starting in middle school, my family took an annual trip down to my Aunt and Uncle's in Camarillo, California for a large family reunion at Disneyland. Later, in my college years, I found myself in Orange County, California. I was soon hired as a cast member at Disneyland as a Jungle Cruise Skipper.
+              For as long as I can remember, I've been drawn to places that let
+              people forget the noise of everyday life for a while—places where
+              time slows down, where beauty feels intentional, and where you
+              leave a little lighter than you arrived. As a kid, that feeling
+              came from wandering parks and gardens, sitting on benches long
+              after closing, imagining what it would be like to create a place
+              that made people feel <em>that</em> way.
             </p>
+
             <p>
-              For the past 20+ years, Walt Disney has been a huge inspiration for me. I have dreamed of creating my own experience since high school and in March of 2024 I seized the opportunity to grab available farmland along the Willamette River just north of Eugene, Oregon.
+              One of the strongest influences on that imagination was
+              Disneyland. Not because it's flashy or grand, but because of how
+              thoughtfully it's built. Walt Disney believed that details
+              matter—that music, layout, hospitality, and emotion all work
+              together to shape how people feel. Disneyland isn't just something
+              you look at; it's something you're <em>inside</em> of. That idea
+              stayed with me: that a place can be designed to care for people
+              quietly, without them even realizing why they feel so good being
+              there.
             </p>
+
+            <p>Years later, that inspiration met soil.</p>
+
             <p>
-              Today, I continue to expand farm infrustructure and build out an enchanting experience through flowers at Hues Floral Park.
+              What began as a few rows of dahlias slowly turned into something
+              more. Not just a flower farm, but a place designed with
+              intention—paths you want to wander, music that follows you without
+              demanding attention, flowers chosen as much for how they make you
+              feel as how they look. Hues became my way of blending farming with
+              storytelling, hard work with imagination, and beauty with meaning.
+            </p>
+
+            <p>
+              I build this place largely by hand—often one project at a time,
+              between family life, weather setbacks, broken plans, and long
+              nights of thinking. There have been losses along the way: storms
+              that destroyed months of work, seasons where plants didn't
+              survive, moments when progress felt painfully slow. But those
+              challenges are part of the story too. They keep the place honest.
+            </p>
+
+            <p>
+              At its heart, Hues is about connection. About welcoming people as
+              they are. About creating an experience that doesn't rush you, sell
+              to you, or ask you to perform—just invites you to be present. Pick
+              some flowers. Listen to the music. Watch your kids chase chickens.
+              Sit for a while longer than you planned.
+            </p>
+
+            <p>
+              If you visit and feel a little sadness when it's time to
+              leave—paired with a quiet urge to come back—then I've built what I
+              hoped to build.
+            </p>
+
+            <p>
+              Thanks for being part of it,
+              <br />
+              <strong>Dusty</strong>
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://instagram.com/huesflowers" icon={InstagramIcon} className="mt-4">
+            <SocialLink
+              href="https://instagram.com/huesflowers"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
               Follow on Instagram
             </SocialLink>
             <SocialLink

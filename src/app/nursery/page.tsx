@@ -9,7 +9,7 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
-const projects = [
+const plantStarts = [
   {
     name: 'Planetaria',
     description:
@@ -59,37 +59,37 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  title: 'Hues Cut Flower Nursery',
+  description: 'The best varieties of cut flowers ready to plant in your own garden at home.',
 }
 
-export default function Projects() {
+export default function PlantStarts() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="The Flower Nursery. Cut Flower Starts for Your Own Garden."
+      intro="Hues' flower nursery is the place to find the best varieties of cut flower starts ready to plant in your own garden at home."
     >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {projects.map((project) => (
-          <Card as="li" key={project.name}>
+        {plantStarts.map((plantStart) => (
+          <Card as="li" key={plantStart.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-lime-800/5 ring-lime-900/5 dark:border dark:border-lime-700/50 dark:bg-lime-800 dark:ring-0">
               <Image
-                src={project.logo}
+                src={plantStart.logo}
                 alt=""
                 className="h-8 w-8"
                 unoptimized
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-lime-800 dark:text-lime-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link href={plantStart.link.href}>{plantStart.name}</Card.Link>
             </h2>
-            <Card.Description>{project.description}</Card.Description>
+            <Card.Description>{plantStart.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-lime-400 transition group-hover:text-yellow-500 dark:text-lime-200">
               <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
+              <span className="ml-2">{plantStart.link.label}</span>
             </p>
           </Card>
         ))}
